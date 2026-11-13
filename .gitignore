@@ -1,0 +1,16 @@
+# 权重与大文件不要进仓库（用脚本下载到本地即可）
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.msgpack
+downloads/
+models/
+*.parquet
+*.arrow
+__pycache__/
+.venv/
+venv/

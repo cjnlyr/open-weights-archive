@@ -1,0 +1,36 @@
+# 优先备份的模型清单（给 scripts/download.sh / download.py 用）
+# 每行一个 Hugging Face 仓库 ID；# 开头为注释。
+# 顺序按“先小后大、先量化后原版”排列；下载前确认磁盘空间够。
+# Gated 模型需先在 Hugging Face 网页上点接受许可。
+
+# --- 能实际跑的小模型（先下这些）---
+LiquidAI/LFM3-1.7B
+Qwen/Qwen3-0.6B
+Qwen/Qwen3-8B
+microsoft/Phi-4
+mistralai/Mistral-7B-Instruct-v0.3
+google/gemma-2-9b-it
+meta-llama/Llama-3.1-8B-Instruct
+
+# --- 4-bit 量化版（体积小，优先）---
+unsloth/Qwen3.8-27B-GGUF
+unsloth/GLM-5.3-Flash-GGUF
+ornith-ai/Ornith-1.5-9B-GGUF
+
+# --- 旗舰模型（原版，体积大，确认空间后再下）---
+Qwen/Qwen3.8-27B
+Qwen/Qwen3-32B
+Qwen/Qwen3-14B
+deepseek-ai/DeepSeek-R1
+deepseek-ai/DeepSeek-V3
+zai-org/GLM-5.3-Flash
+zai-org/GLM-5.3
+moonshotai/Kimi-K2.5
+google/gemma-3-27b-it
+NousResearch/Arete-27B
+
+# --- 超大模型（只建议有大容量存储时下载；默认先只存目录）---
+# deepseek-ai/DeepSeek-V4.1-Flash
+# moonshotai/Kimi-K3.1-Pro
+# mistralai/Mistral-Large-4
+# nvidia/Nemotron-3.5-Bolt-74B
